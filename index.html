@@ -2,11 +2,15 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="assets/css/reset.css">
+
         <link rel="stylesheet" href="assets/css/style.css">
+
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>Puppy Collector!</h1>
+        <div></div>
+        <h1 >Puppy Collector!</h1>
+
         <div id = "mid">
             <p>You will be given a randomly generated number at the beginning of the game.</p>
             <br>
@@ -18,14 +22,20 @@
             <br>
             <p>Each time when the game starts, the game will change the value of each puppy.</p>
         </div>
-        <div id="goal"></div>
-        <div id="winLoss"></div>
-        <div id="pictures"></div>
-            <button id="pic1"><img src="assets/images/pexels-photo-59523.jpeg" height="100" width="150"></button>
-            <button id="pic2"><img src="assets/images/pexels-photo-710927.jpeg" height="100" width="150"></button>
-            <button id="pic3"><img src="assets/images/pexels-photo-208834.jpeg" height="100" width="150"></button>
-            <button id="pic4"><img src="assets/images/dog1.jpg" height="100" width="150"></button>
-        <div id="score"></div>
+        <section id="numbers">
+            <div id="goal"></div>
+            <div id="score"></div>
+            <div id="winLoss">
+                <p id="wins"></p>
+                <p id="losses"></p>
+            </div>
+        </section>
+        <div id="pictures">
+            <button id="pic1" class="pics"><img src="assets/images/pexels-photo-59523.jpeg" height="100" width="150"></button>
+            <button id="pic2" class="pics"><img src="assets/images/pexels-photo-710927.jpeg" height="100" width="150"></button>
+            <button id="pic3" class="pics"><img src="assets/images/pexels-photo-208834.jpeg" height="100" width="150"></button>
+            <button id="pic4" class="pics"><img src="assets/images/dog1.jpg" height="100" width="150"></button>
+        </div>
         <script src="assets/javascript/game.js"></script> 
     </body>
 </html>

@@ -12,6 +12,8 @@ $(document).ready(function(){
 
     $('#goal').text('Your Goal Number Is: ' + goal);
     $('#score').text('Your Current Total Is: ' + total);
+    $('#wins').text("Wins: "+ win);
+    $('#losses').text('Losses: ' + losses);
 
     $('#pic1').on('click', function() {
         console.log(pup1);
@@ -44,10 +46,12 @@ $(document).ready(function(){
     function checkWinLoss() {
         if (goal === total) {
             win++;
+            $('#wins').text("Wins: "+ win);
             alert ("You win!");
             reset();
         } else if (total > goal) {
             losses++;
+            $('#losses').text('Losses: ' + losses);
             alert ("Sorry You Lose!")
             reset();
         }
